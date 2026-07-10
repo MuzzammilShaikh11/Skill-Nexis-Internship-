@@ -32,18 +32,29 @@ public class Question_1 {
             System.out.println("3. Multiplication");
             System.out.println("4. Division");
             System.out.println("5. Exit");
+            
+            // Input the user's choice
+            System.out.println("Enter choice:");
+            choice = sc.nextInt();
+             //Exiting
+            if(choice == 5){
+                System.out.println("Exiting...");
+                break;
+            }
+
+            //Invalid choice 
+            if(choice<1 || choice > 5){
+                System.out.println("Invalid choice \n Enter a valid choice between 1 and 5");
+                continue;
+            }
 
             // Input the two operands
             System.out.println("Enter the first number:");
             num1 = sc.nextInt();
 
             System.out.println("Enter the second number:");
-            num2 = sc.nextInt();
-
-            // Input the user's choice
-            System.out.println("Enter choice:");
-            choice = sc.nextInt();
-
+            num2 = sc.nextInt(); 
+        
             // Perform the selected operation
             switch (choice) {
 
@@ -73,14 +84,7 @@ public class Question_1 {
                         System.out.println("Quotient of " + num1 + " and " + num2 + " = " + (num1 * 1.0 / num2));
                     break;
                 }
-
-                case 5: {
-                    System.out.println("Exiting...");
-                    break;
-                }
-
-                default:
-                    System.out.println("Enter a valid choice from 1 to 5.");
+                
             }
         }
 
