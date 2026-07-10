@@ -6,7 +6,7 @@ It helps users check their balance, deposit money, and withdraw money.
 
 import java.util.Scanner;
 
-public class Question_3 {
+public class MiniProject {
     public static void main(String[] args) {
         System.out.println("---Bank Management Console App---");
 
