@@ -5,7 +5,7 @@ This Java program takes a number as input from the user and prints its multiplic
 
 ## Concepts Used
 - Scanner Class
-- Loops (`for`)
 - Variables
+- `for` Loop
 - Arithmetic Operators
 - User Input
